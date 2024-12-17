@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML5 Video Tag</title>
+</head>
+<body>
+    <header>
+        <h1>Learning HTML5: Video Tag</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction to HTML5 Video</h2>
+            <p>The HTML5 <code>&lt;video&gt;</code> tag is used to embed video content into a webpage. It supports multiple video formats and provides a way to play, pause, and control video playback without requiring plugins like Flash.</p>
+        </section>
+
+        <section>
+            <h2>Basic Syntax</h2>
+            <pre>
+&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+            </pre>
+            <p>The <code>controls</code> attribute adds playback controls like play, pause, and volume to the video.</p>
+        </section>
+
+        <section>
+            <h2>Attributes of the Video Tag</h2>
+            <ul>
+                <li><strong>controls:</strong> Displays video controls.</li>
+                <li><strong>autoplay:</strong> Automatically plays the video when the page loads.</li>
+                <li><strong>loop:</strong> Makes the video loop continuously.</li>
+                <li><strong>muted:</strong> Starts the video with the audio muted.</li>
+                <li><strong>poster:</strong> Specifies an image to display while the video is loading or until the user plays it.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Example</h2>
+            <p>Here is a practical example of the <code>&lt;video&gt;</code> tag:</p>
+            <video controls width="600">
+                <!-- <source src="html_TOPS.mp4" type="video/mp4"> -->
+                <source src="https://cdn.pixabay.com/video/2024/11/07/240330_large.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>In this example, the video has fallback sources to ensure compatibility across different browsers.</p>
+        </section>
+
+        <section>
+            <h2>Browser Support</h2>
+            <p>The <code>&lt;video&gt;</code> tag is supported by all major modern browsers. However, not all browsers support every video format. The commonly supported formats are:</p>
+            <ul>
+                <li><strong>MP4:</strong> Using the H.264 codec.</li>
+                <li><strong>WebM:</strong> Using the VP8/VP9 codec.</li>
+                <li><strong>Ogg:</strong> Using the Theora codec.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Learn HTML5 Video Tag</p>
+    </footer>
+</body>
+</html>

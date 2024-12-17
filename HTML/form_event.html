@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Form Event Attributes</title>
+    <script>
+        function handleBlur() {
+            alert('The input field lost focus.');
+        }
+
+        function handleChange(event) {
+            alert('Value changed to: ' + event.target.value);
+        }
+
+        function handleFocus() {
+            alert('The input field is focused.');
+        }
+
+        function handleInput(event) {
+            console.log('Current input: ' + event.target.value);
+        }
+
+        function handleInvalid() {
+            alert('Invalid input! Please correct it.');
+        }
+
+        function handleReset() {
+            alert('Form has been reset.');
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Form submitted successfully!');
+        }
+    </script>
+</head>
+<body>
+    <h1>Form Event Attributes</h1>
+
+    <p><b>onblur:</b> Triggered when the form element loses focus.</p>
+    <p><b>onchange:</b> Triggered when the value of the form element changes.</p>
+    <p><b>onfocus:</b> Triggered when the form element gains focus.</p>
+    <p><b>oninput:</b> Triggered when the user provides input to the form element.</p>
+    <p><b>oninvalid:</b> Triggered when the form element fails to meet constraints.</p>
+    <p><b>onreset:</b> Triggered when the form is reset.</p>
+    <p><b>onsubmit:</b> Triggered when the form is submitted.</p>
+
+    <form onreset="handleReset()" onsubmit="handleSubmit(event)">
+        <label for="username">Username (required):</label>
+        <input 
+            type="text" 
+            id="username" 
+            name="username" 
+            required 
+            onblur="handleBlur()" 
+            onchange="handleChange(event)" 
+            onfocus="handleFocus()" 
+            oninput="handleInput(event)" 
+            oninvalid="handleInvalid()">
+        <br><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

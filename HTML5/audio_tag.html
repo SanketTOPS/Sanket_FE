@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML5 Audio Tag</title>
+</head>
+
+<body>
+    <header>
+        <h1>Learning HTML5 Audio Tag</h1>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction to HTML5 Audio Tag</h2>
+            <p>The <code>&lt;audio&gt;</code> tag in HTML5 is used to embed audio content in a web page. It provides a
+                standard way to include sound files without requiring additional plugins.</p>
+        </section>
+
+        <section id="syntax">
+            <h2>Syntax of Audio Tag</h2>
+            <pre>
+&lt;audio controls&gt;
+    &lt;source src="audiofile.mp3" type="audio/mpeg"&gt;
+    &lt;source src="audiofile.ogg" type="audio/ogg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+            </pre>
+            <p>Attributes used in the <code>&lt;audio&gt;</code> tag include:</p>
+            <ul>
+                <li><strong>controls:</strong> Adds play, pause, and volume controls.</li>
+                <li><strong>autoplay:</strong> Automatically starts playing the audio.</li>
+                <li><strong>loop:</strong> Makes the audio replay automatically after finishing.</li>
+                <li><strong>muted:</strong> Starts the audio in a muted state.</li>
+                <li><strong>preload:</strong> Indicates how the browser should load the audio (e.g., <code>auto</code>,
+                    <code>metadata</code>, or <code>none</code>).</li>
+            </ul>
+        </section>
+
+        <section id="example">
+            <h2>Example Usage</h2>
+            <p>Below is an example of the <code>&lt;audio&gt;</code> tag in action:</p>
+            <audio controls>
+                <source src="sample_sanket.mp3" type="audio/mpeg">
+                <!-- <source src="example.ogg" type="audio/ogg"> -->
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section id="formats">
+            <h2>Supported Audio Formats</h2>
+            <p>The <code>&lt;audio&gt;</code> tag supports the following audio formats:</p>
+            <ul>
+                <li><strong>MP3:</strong> MPEG Audio Layer-3 (<code>audio/mpeg</code>)</li>
+                <li><strong>WAV:</strong> Waveform Audio File Format (<code>audio/wav</code>)</li>
+                <li><strong>OGG:</strong> Ogg Vorbis (<code>audio/ogg</code>)</li>
+            </ul>
+        </section>
+
+        <section id="browser_support">
+            <h2>Browser Support</h2>
+            <p>The <code>&lt;audio&gt;</code> tag is supported in all modern web browsers. However, ensure to provide
+                multiple formats for compatibility.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Happy Learning HTML5!</p>
+    </footer>
+</body>
+
+</html>

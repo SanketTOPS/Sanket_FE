@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFrame Example</title>
+</head>
+
+<body>
+
+    <h1>Learning About IFrames</h1>
+
+    <p>An <strong>iframe</strong> (inline frame) is used to embed another webpage or content within the current webpage.
+    </p>
+
+    <h2>Examples of IFrames</h2>
+
+    <!-- Embedding a webpage -->
+    <h3>Embedding an External Website</h3>
+    <iframe src="https://www.wikipedia.org/" width="600" height="400" title="Wikipedia"></iframe>
+
+    <!-- Specifying no border -->
+    <h3>IFrame Without Border</h3>
+    <iframe src="https://www.wikipedia.org/" width="600" height="300" title="Example Website"
+        style="border: none;"></iframe>
+
+    <!-- Embedding a video -->
+    <h3>Embedding a YouTube Video</h3>
+    <!-- <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/watch?v=CVI8ocwfnpo" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3bEfM1u5CRo?si=H25OHGc6HscrlfN4"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Local content -->
+    <h3>Embedding Local Content</h3>
+    <p>If you have another HTML file in the same directory (e.g., <code>example.html</code>), you can embed it:</p>
+    <iframe src="Formatting.html" width="600" height="400" title="Local Content"></iframe>
+
+</body>
+
+</html>
