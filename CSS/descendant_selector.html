@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector Example</title>
+    <style>
+        /* Descendant Selector */
+        div p {
+            color: green;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        p {
+            font-size: 16px;
+            color: black;
+        }
+
+        div {
+            padding: 10px;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Descendant Selector Example</h1>
+
+    <div>
+        <p>This paragraph is inside the div and will be styled.</p>
+        <section>
+            <p>This paragraph is inside a section, which is inside the div, so it will also be styled.</p>
+        </section>
+    </div>
+
+    <p>This paragraph is outside the div and will not be styled.</p>
+
+    <div>
+        <p>This paragraph is inside another div and will be styled.</p>
+    </div>
+</body>
+</html>

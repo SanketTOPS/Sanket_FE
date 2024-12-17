@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CSS Selectors</title>
+    <style>
+        /* CSS Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* CSS Element Selector */
+        h1 {
+            color: darkblue;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        /* CSS Id Selector */
+        #id-selector-example {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 2px solid #ccc;
+        }
+
+        /* CSS Class Selector */
+        .class-selector-example {
+            background-color: #e6f7ff;
+            padding: 10px;
+            border-left: 5px solid #007acc;
+            margin: 10px 0;
+        }
+
+        /* CSS Group Selector */
+        h2, h3 {
+            color: darkgreen;
+            margin-top: 20px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Types of CSS Selectors</h1>
+    <h2>1. CSS Universal Selector</h2>
+    <p>The universal selector (<code>*</code>) applies styles to all elements on the page.</p>
+    
+    <h2>2. CSS Element Selector</h2>
+    <p>The element selector targets HTML elements like <code>h1</code>, <code>p</code>, etc.</p>
+    
+    <h2>3. CSS Id Selector</h2>
+    <p id="id-selector-example">This is an example of the ID selector. IDs are unique and are applied using <code>#</code>.</p>
+    
+    <h2>4. CSS Class Selector</h2>
+    <p class="class-selector-example">This is an example of the class selector. Classes are applied using <code>.</code> and can be used multiple times.</p>
+    
+    <h2>5. CSS Group Selector</h2>
+    <h3>This heading and the next paragraph are styled using the group selector.</h3>
+    <p>Group selectors target multiple elements at once, like <code>h2, p</code>, to avoid repetitive CSS.</p>
+
+    <h2>Summary</h2>
+    <ul>
+        <li>CSS Universal Selector: <code>* { }</code></li>
+        <li>CSS Element Selector: <code>element { }</code></li>
+        <li>CSS Id Selector: <code>#id { }</code></li>
+        <li>CSS Class Selector: <code>.class { }</code></li>
+        <li>CSS Group Selector: <code>element1, element2 { }</code></li>
+    </ul>
+</body>
+</html>

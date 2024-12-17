@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector</title>
+    <style>
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            color: green;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+            color: black;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Heading 1</h2>
+    <p>This paragraph will be styled in green.</p>
+    <p>This paragraph will not be styled.</p>
+
+    <h2>Another Heading 2</h2>
+    <p>This paragraph will also be styled in green.</p>
+    <div>Some text in a div.</div>
+    <p>This paragraph will not be styled.</p>
+</body>
+</html>
