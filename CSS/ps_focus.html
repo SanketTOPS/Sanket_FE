@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:focus Pseudo-Class Example</title>
+    <style>
+        /* Default input and link styles */
+        input,
+        a {
+            padding: 10px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+            display: block;
+            margin-bottom: 50px;
+        }
+
+        /* Style for input and link on focus */
+        input:focus,
+        a:focus {
+            border-color: blue;
+            background-color: #f0f8ff;
+            box-shadow: 0 0 5px blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:focus Pseudo-Class Example</h1>
+    <p>Click or tab into the input field or link to see the :focus style applied:</p>
+    <input type="text" placeholder="Type here..." />
+    <a href="https://www.tops-int.com" target="_blank">Visit Example.com</a>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:lang() Pseudo-Class Example</title>
+    <style>
+        /* Style for English text */
+        p:lang(en) {
+            color: blue;
+            font-style: italic;
+        }
+
+        /* Style for Spanish text */
+        p:lang(es) {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Style for French text */
+        p:lang(fr) {
+            color: green;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:lang() Pseudo-Class Example</h1>
+    <p lang="en">This text is in English.</p>
+    <p lang="es">Este texto está en español.</p>
+    <p lang="fr">Ce texte est en français.</p>
+</body>
+
+</html>

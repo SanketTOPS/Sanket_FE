@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:nth-child(n) Pseudo-Class Example</title>
+    <style>
+        /* Default style for all list items */
+        li {
+            font-size: 18px;
+            padding: 5px;
+            color: black;
+        }
+
+        /* Style every even-numbered list item */
+        li:nth-child(even) {
+            background-color: #7ee854;
+        }
+
+        /* Style every odd-numbered list item */
+        li:nth-child(odd) {
+            background-color: #e0f7fa;
+        }
+
+        /* Style the 3rd list item specifically */
+        li:nth-child(3) {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:nth-child(n) Pseudo-Class Example</h1>
+    <p>List items are styled based on their position in the list:</p>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item (special styling)</li>
+        <li>Fourth item</li>
+        <li>Fifth item</li>
+    </ul>
+</body>
+
+</html>

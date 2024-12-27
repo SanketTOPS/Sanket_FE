@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::first-line Pseudo-Element Example</title>
+    <style>
+        /* Default style for paragraphs */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        /* Style for the first line of each paragraph */
+        p::first-line {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>::first-line Pseudo-Element Example</h1>
+    <p>This is a simple paragraph where the first line is styled differently from the rest of the text. Notice that only
+        the first line of the paragraph is affected by the style.</p>
+    <p>The first line of this paragraph will appear larger, bold, and blue in color compared to the rest of the
+        paragraph text.</p>
+</body>
+
+</html>
