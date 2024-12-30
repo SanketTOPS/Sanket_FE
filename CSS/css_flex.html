@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Display Example</title>
+    <style>
+        /* Flex container */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            /* Distribute items with space between them */
+            align-items: center;
+            /* Vertically align items in the center */
+            background-color: lightgray;
+            padding: 20px;
+            height: 200px;
+        }
+
+        /* Flex items */
+        .flex-item {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+                /* Stack items vertically on smaller screens */
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Flexbox Display Example</h1>
+
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <p>This example demonstrates how the flex container can control the alignment and spacing of flex items.</p>
+
+</body>
+
+</html>

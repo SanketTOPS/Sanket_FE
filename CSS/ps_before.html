@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ::before Example</title>
+    <style>
+        /* Style for the box */
+        .box {
+            position: relative;
+            padding: 20px;
+            font-size: 20px;
+            background-color: lightblue;
+            text-align: center;
+            border: 2px solid #005f73;
+            width: 200px;
+            margin: 50px auto;
+        }
+
+        /* Using ::before to add content before the text */
+        .box::before {
+            content: "👉 ";
+            font-size: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Hello, world!
+    </div>
+</body>
+
+</html>

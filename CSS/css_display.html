@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property Example</title>
+    <style>
+        /* Block display */
+        .block-example {
+            display: block;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Inline display */
+        .inline-example {
+            display: inline;
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* Inline-block display */
+        .inline-block-example {
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* None display (hidden) */
+        .none-example {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Display Property Example</h1>
+
+    <div class="block-example">
+        <p>This is a block-level element. It takes up the full width of its container and starts on a new line.</p>
+    </div>
+
+    <span class="inline-example">This is an inline element.</span>
+    <span class="inline-example">It stays on the same line as other inline elements.</span>
+
+    <div class="inline-block-example">
+        <p>This is an inline-block element. It behaves like an inline element, but you can set its width and height.</p>
+    </div>
+
+    <div class="none-example">
+        <p>This element is hidden because its display is set to none.</p>
+    </div>
+
+    <p>Note: The hidden element is not visible on the page because it has display: none.</p>
+
+</body>
+
+</html>

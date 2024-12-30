@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector Example</title>
+    <style>
+        /* Descendant selector example */
+        div p {
+            color: green;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Descendant Selector Example</h1>
+    <div>
+        <p>This paragraph is a descendant of the div and will be styled.</p>
+        <div>
+            <p>This paragraph is nested inside another div, making it a descendant of the outer div and will also be
+                styled.</p>
+        </div>
+    </div>
+    <p>This paragraph is not a descendant of the div, so it will not be styled.</p>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selector Example</title>
+    <style>
+        /* General sibling selector example */
+        h2 {
+            color: blue;
+        }
+
+        h2~p {
+            color: green;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>General Sibling Selector Example</h1>
+    <h2>Header 2</h2>
+    <p>This paragraph is a sibling of the H2 and comes after it. It will be styled.</p>
+    <p>Another paragraph that is also a sibling of the H2 and will be styled.</p>
+    <div>This div will not be styled as it is not a matching sibling of H2.</div>
+    <h2>Another Header 2</h2>
+    <p>This paragraph comes after the second H2 and will also be styled.</p>
+</body>
+
+</html>

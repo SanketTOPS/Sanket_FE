@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Example</title>
+    <style>
+        /* Setting a background color */
+        .bg-color {
+            background-color: lightblue;
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Using background image */
+        .bg-image {
+            background-image: url('https://www.w3schools.com/w3images/fjords.jpg');
+            background-size: cover;
+            /* Ensures the image covers the whole element */
+            background-position: center;
+            /* Centers the background image */
+            height: 300px;
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+        }
+
+        /* Using background-repeat */
+        .bg-repeat {
+            background-image: url('https://www.w3schools.com/w3images/rock.jpg');
+            background-repeat: repeat;
+            /* Repeats the image */
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Using background gradient */
+        .bg-gradient {
+            background: linear-gradient(to left, red, yellow);
+            /* Creates a gradient from red to yellow */
+            padding: 50px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Using multiple backgrounds */
+        .bg-multiple {
+            background-image: url('https://www.w3schools.com/w3images/fjords.jpg'), linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+            background-position: center;
+            background-size: cover;
+            color: white;
+            padding: 100px;
+            text-align: center;
+        }
+
+        /* Using background attachment */
+        .bg-attachment {
+            background-image: url('https://www.w3schools.com/w3images/fjords.jpg');
+            background-attachment: fixed;
+            /* Keeps the background image fixed when scrolling */
+            background-size: cover;
+            height: 500px;
+            text-align: center;
+            color: white;
+            padding-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Background Properties</h1>
+
+    <div class="bg-color">
+        <h2>Background Color</h2>
+        <p>This is an example of background color.</p>
+    </div>
+
+    <div class="bg-image">
+        <h2>Background Image</h2>
+        <p>This section uses a background image.</p>
+    </div>
+
+    <div class="bg-repeat">
+        <h2>Background Repeat</h2>
+        <p>This section uses a repeating background image.</p>
+    </div>
+
+    <div class="bg-gradient">
+        <h2>Background Gradient</h2>
+        <p>This section uses a linear gradient as background.</p>
+    </div>
+
+    <div class="bg-multiple">
+        <h2>Multiple Backgrounds</h2>
+        <p>This section uses multiple background layers.</p>
+    </div>
+
+    <div class="bg-attachment">
+        <h2>Background Attachment</h2>
+        <p>This section has a background image that stays fixed while scrolling.</p>
+    </div>
+
+</body>
+
+</html>

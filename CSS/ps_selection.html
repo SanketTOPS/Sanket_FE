@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ::selection Example</title>
+    <style>
+        /* Style for the body */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Style for the selected text */
+        ::selection {
+            background-color: #ffcc00;
+            /* Yellow background for selected text */
+            color: #000000;
+            /* Black text color for selected text */
+            text-shadow: none;
+            /* Remove text shadow */
+        }
+
+        /* Style for the paragraph */
+        p {
+            font-size: 18px;
+            color: #333;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        This is a simple example to demonstrate how the <strong>::selection</strong> pseudo-element works in CSS.
+        Try selecting some text to see the effect.
+    </p>
+</body>
+
+</html>

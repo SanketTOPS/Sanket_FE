@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector Example</title>
+    <style>
+        /* Adjacent sibling selector example */
+        h2 {
+            color: blue;
+        }
+
+        h2+p {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adjacent Sibling Selector Example</h1>
+    <h2>Header 2</h2>
+    <p>This paragraph is immediately after the H2 and will be styled.</p>
+    <p>This paragraph is not an adjacent sibling of the H2, so it will not be styled.</p>
+    <div>This div will not be styled because it does not follow an H2.</div>
+    <h2>Another Header 2</h2>
+    <p>This paragraph comes immediately after the second H2 and will also be styled.</p>
+</body>
+
+</html>

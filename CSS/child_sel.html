@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector Example</title>
+    <style>
+        /* Child selector example */
+        div>p {
+            color: purple;
+            font-weight: bold;
+            border: 1px solid purple;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Child Selector Example</h1>
+    <div>
+        <p>This paragraph is a direct child of the div and will be styled.</p>
+        <p>Another direct child of the div, also styled.</p>
+        <div>
+            <p>This paragraph is not a direct child of the outer div, so it will not be styled.</p>
+        </div>
+    </div>
+    <p>This paragraph is outside the div and will not be styled.</p>
+</body>
+
+</html>

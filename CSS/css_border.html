@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Example</title>
+    <style>
+        /* Border color, style, and width */
+        .border-basic {
+            border: 5px solid blue;
+            /* 5px wide, solid, blue border */
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Border with rounded corners */
+        .border-radius {
+            border: 3px dashed green;
+            /* 3px wide, dashed, green border */
+            border-radius: 15px;
+            /* Rounds the corners */
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Border with different sides */
+        .border-sides {
+            border-top: 4px solid red;
+            /* Top border */
+            border-right: 6px dashed purple;
+            /* Right border */
+            border-bottom: 2px solid yellow;
+            /* Bottom border */
+            border-left: 5px dotted orange;
+            /* Left border */
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Border with box shadow */
+        .border-shadow {
+            border: 3px solid black;
+            /* 3px wide, solid, black border */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            /* Adds shadow around the border */
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Border with transparent parts */
+        .border-transparent {
+            border: 5px solid transparent;
+            /* Transparent border */
+            border-top: 5px solid blue;
+            /* Adds blue top border */
+            border-radius: 15px;
+            /* Rounded corners */
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Border with inset effect */
+        .border-inset {
+            border: 5px inset gray;
+            /* Inset border gives a "pressed" effect */
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Border Properties</h1>
+
+    <div class="border-basic">
+        <h2>Basic Border</h2>
+        <p>This is an example of a basic border.</p>
+    </div>
+
+    <div class="border-radius">
+        <h2>Border with Rounded Corners</h2>
+        <p>This border has rounded corners.</p>
+    </div>
+
+    <div class="border-sides">
+        <h2>Different Borders on Each Side</h2>
+        <p>This section has different borders on each side.</p>
+    </div>
+
+    <div class="border-shadow">
+        <h2>Border with Shadow</h2>
+        <p>This section has a border with a shadow effect.</p>
+    </div>
+
+    <div class="border-transparent">
+        <h2>Transparent Border</h2>
+        <p>This border has transparent parts and a colored top border.</p>
+    </div>
+
+    <div class="border-inset">
+        <h2>Inset Border</h2>
+        <p>This border has an inset effect, making it appear pressed into the page.</p>
+    </div>
+
+</body>
+
+</html>

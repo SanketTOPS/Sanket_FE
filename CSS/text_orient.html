@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS text-orientation Example</title>
+    <style>
+        .vertical-text {
+            writing-mode: vertical-rl;
+            /* Changes text to vertical writing mode */
+            text-orientation: upright;
+            /* Ensures that characters are upright */
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 50px;
+            height: 150px;
+            text-align: center;
+        }
+
+        .horizontal-text {
+            writing-mode: horizontal-tb;
+            /* Default horizontal text */
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vertical-text">
+        This is vertical text.
+    </div>
+
+    <div class="horizontal-text">
+        This is horizontal text.
+    </div>
+</body>
+
+</html>
