@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript - Conditional Statements</title>
+</head>
+
+<body>
+    <h1>JavaScript for Beginners: Conditional Statements</h1>
+    <p>Open your browser's developer tools (usually by pressing F12 or right-clicking and selecting "Inspect") and go to
+        the Console tab to see the output.</p>
+
+    <script>
+        // Example 1: Simple if statement
+        const age = 18;
+        if (age >= 18) {
+            console.log("You are eligible to vote.");
+        }
+
+        // Example 2: if-else statement
+        const isRaining = true;
+        if (isRaining) {
+            console.log("Don't forget your umbrella!");
+        } else {
+            console.log("It's a sunny day. Enjoy!");
+        }
+
+        // Example 3: if-else if-else statement
+        const score = 85;
+        if (score >= 90) {
+            console.log("Grade: A");
+        } else if (score >= 80) {
+            console.log("Grade: B");
+        } else if (score >= 70) {
+            console.log("Grade: C");
+        } else {
+            console.log("Grade: F");
+        }
+
+        // Example 4: Nested if statements
+        const username = "admin";
+        const password = "1234";
+        if (username === "admin") {
+            if (password === "1234") {
+                console.log("Access granted.");
+            } else {
+                console.log("Incorrect password.");
+            }
+        } else {
+            console.log("User not found.");
+        }
+    </script>
+</body>
+
+</html>

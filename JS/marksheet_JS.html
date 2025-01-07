@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript for Beginners: Marksheet Example</title>
+</head>
+
+<body>
+    <h1>Learn JavaScript: Marksheet Example</h1>
+    <p>Open the browser console to see the output. Follow the instructions in the code to input your marks.</p>
+    <script>
+        // Step 1: Get user input for marks of four subjects
+        let subject1 = parseFloat(prompt("Enter marks for Subject 1 (out of 100):"));
+        let subject2 = parseFloat(prompt("Enter marks for Subject 2 (out of 100):"));
+        let subject3 = parseFloat(prompt("Enter marks for Subject 3 (out of 100):"));
+        let subject4 = parseFloat(prompt("Enter marks for Subject 4 (out of 100):"));
+
+        // Step 2: Calculate total marks
+        let total = subject1 + subject2 + subject3 + subject4;
+        console.log("Total Marks: " + total);
+
+        // Step 3: Calculate percentage
+        let percentage = (total / 400) * 100;
+        console.log("Percentage: " + percentage.toFixed(2) + "%");
+
+        // Step 4: Determine grade using conditional statements
+        let grade;
+        if (percentage >= 90) {
+            grade = "A+";
+        } else if (percentage >= 80) {
+            grade = "A";
+        } else if (percentage >= 70) {
+            grade = "B";
+        } else if (percentage >= 60) {
+            grade = "C";
+        } else if (percentage >= 50) {
+            grade = "D";
+        } else {
+            grade = "F"; // Fail
+        }
+
+        console.log("Grade: " + grade);
+
+        // Step 5: Display a final message
+        if (grade !== "F") {
+            console.log("Congratulations! You passed with grade " + grade + ".");
+        } else {
+            console.log("Sorry, you failed. Better luck next time.");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript Loops</title>
+</head>
+
+<body>
+    <h1>JavaScript Loops Example</h1>
+    <p>Open the browser console to see the output of different JavaScript loops.</p>
+
+    <script>
+        // Example of a 'for' loop
+        console.log("Example of a 'for' loop:");
+        for (let i = 1; i <= 5; i++) {
+            console.log(`Iteration ${i} in 'for' loop`);
+        }
+
+        // Example of a 'while' loop
+        console.log("\nExample of a 'while' loop:");
+        let count = 1;
+        while (count <= 5) {
+            console.log(`Iteration ${count} in 'while' loop`);
+            count++;
+        }
+
+        // Example of a 'do...while' loop
+        console.log("\nExample of a 'do...while' loop:");
+        let number = 1;
+        do {
+            console.log(`Iteration ${number} in 'do...while' loop`);
+            number++;
+        } while (number <= 5);
+
+        // Nested 'for' loop example
+        console.log("\nNested 'for' loop example:");
+        for (let i = 1; i <= 3; i++) {
+            for (let j = 1; j <= 3; j++) {
+                console.log(`i: ${i}, j: ${j}`);
+            }
+        }
+
+        // 'for...of' loop example (iterating over an array)
+        console.log("\nExample of a 'for...of' loop:");
+        const fruits = ["Apple", "Banana", "Cherry"];
+        for (const i of fruits) {
+            console.log(`Fruit: ${i}`);
+        }
+
+        // 'for...in' loop example (iterating over an object)
+        console.log("\nExample of a 'for...in' loop:");
+        const car = { brand: "Toyota", model: "Corolla", year: 2020 };
+        for (const key in car) {
+            console.log(`${key}: ${car[key]}`);
+        }
+    </script>
+</body>
+
+</html>

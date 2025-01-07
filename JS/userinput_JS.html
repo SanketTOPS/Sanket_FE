@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript for Beginners</title>
+</head>
+
+<body>
+    <h1>Learn JavaScript for Beginners</h1>
+    <p>Open the developer console (right-click on the page, click 'Inspect', then go to the 'Console' tab) to see the
+        examples.</p>
+
+    <script>
+        // Example: User Input with Different Data Types
+
+        // String Input
+        let userName = prompt("Enter your name:");
+        console.log("Hello, " + userName + "! This is a string input.");
+
+        // Number Input
+        let userAge = prompt("Enter your age:");
+        userAge = Number(userAge); // Convert string input to number
+        console.log("Your age is: ", userAge, "(This is a number input)");
+
+        // Boolean Input
+        let likesJavaScript = confirm("Do you like JavaScript?");
+        console.log("Likes JavaScript: ", likesJavaScript, "(This is a boolean input)");
+
+        // Undefined Example
+        let undefinedExample;
+        console.log("Undefined Example: ", undefinedExample, "(This variable is not assigned any value)");
+
+        // Null Example
+        let nullExample = null;
+        console.log("Null Example: ", nullExample, "(This variable is explicitly set to null)");
+
+        // Array Input Example
+        let hobbies = prompt("Enter your hobbies separated by commas:");
+        let hobbiesArray = hobbies.split(","); // Convert string input to an array
+        console.log("Your hobbies are: ", hobbiesArray, "(This is an array)");
+
+        // Object Example
+        let userObject = {
+            name: userName,
+            age: userAge,
+            likesJS: likesJavaScript,
+            hobbies: hobbiesArray
+        };
+        console.log("User Object: ", userObject, "(This is an object)");
+    </script>
+</body>
+
+</html>

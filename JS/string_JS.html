@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings for Beginners</title>
+</head>
+
+<body>
+    <h1>Learn JavaScript Strings</h1>
+    <p>Open the browser's console to see the output of the examples.</p>
+
+    <script>
+        // JavaScript String Examples
+
+        // 1. Basic String Declaration
+        const str = "Hello, JavaScript!";
+        console.log("Original String:", str);
+
+        // 2. String Length
+        console.log("Length of the String:", str.length);
+
+        // 3. Accessing Characters
+        console.log("First Character:", str[0]);
+        console.log("Last Character:", str[str.length - 1]);
+
+        // 4. String Methods
+        // a) toUpperCase and toLowerCase
+        console.log("Uppercase:", str.toUpperCase());
+        console.log("Lowercase:", str.toLowerCase());
+
+        // b) indexOf and lastIndexOf
+        console.log("Index of 'JavaScript':", str.indexOf("JavaScript"));
+        console.log("Last Index of 'o':", str.lastIndexOf("o"));
+
+        // c) slice and substring
+        console.log("Slice (7, 17):", str.slice(7, 17));
+        console.log("Substring (7, 17):", str.substring(7, 17));
+
+        // d) replace and replaceAll
+        console.log("Replace 'JavaScript' with 'World':", str.replace("JavaScript", "World"));
+
+        // e) trim, trimStart, trimEnd
+        const paddedStr = "   Hello, World!   ";
+        console.log("Trimmed String:", paddedStr.trim());
+        console.log("Trim Start:", paddedStr.trimStart());
+        console.log("Trim End:", paddedStr.trimEnd());
+
+        // f) split and join
+        const words = str.split(" ");
+        console.log("Split into Words:", words);
+        console.log("Join Words with '-':", words.join("-"));
+
+        // g) charAt and charCodeAt
+        console.log("Character at index 7:", str.charAt(7));
+        console.log("Character code at index 7:", str.charCodeAt(8));
+
+        // h) includes, startsWith, endsWith
+        console.log("Includes 'JavaScript':", str.includes("JavaScript"));
+        console.log("Starts with 'Hello':", str.startsWith("Hello"));
+        console.log("Ends with '!':", str.endsWith("!"));
+
+        // i) repeat
+        console.log("Repeat String 3 times:", str.repeat(3));
+
+        // Practice Challenge
+        // Create your own string and apply at least 5 methods from above.
+        const practiceStr = "Learning JavaScript is fun!";
+        console.log("Challenge String:", practiceStr);
+        console.log("Uppercase:", practiceStr.toUpperCase());
+        console.log("Slice (9, 20):", practiceStr.slice(9, 20));
+        console.log("Includes 'fun':", practiceStr.includes("fun"));
+        console.log("Replace 'fun' with 'exciting':", practiceStr.replace("fun", "exciting"));
+        console.log("Repeat twice:", practiceStr.repeat(2));
+    </script>
+</body>
+
+</html>

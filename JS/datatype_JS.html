@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Data Types - Beginners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .example {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .output {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Learn JavaScript - Data Types</h1>
+    <p>In JavaScript, there are different types of data types:</p>
+    <ul>
+        <li><b>String:</b> Used for text. Example: "Hello, World!"</li>
+        <li><b>Number:</b> Used for numbers. Example: 42</li>
+        <li><b>Boolean:</b> True or False values. Example: true</li>
+        <li><b>Object:</b> Used for collections of data. Example: { name: "Sanket", age: 32 }</li>
+        <li><b>Array:</b> A list of items. Example: [1, 2, 3]</li>
+        <li><b>Undefined:</b> A variable that has not been assigned a value.</li>
+        <li><b>Null:</b> Represents "nothing."</li>
+    </ul>
+
+    <div class="example">
+        <h2>Data Types Example</h2>
+        <p>Click the button below to see examples of JavaScript data types:</p>
+        <button onclick="showDataTypes()">Show Data Types</button>
+        <div class="output" id="output"></div>
+    </div>
+
+    <script>
+        function showDataTypes() {
+            // Examples of different data types
+            let stringExample = "Hello, World!"; // String
+            let numberExample = 42; // Number
+            let booleanExample = true; // Boolean
+            let objectExample = { name: "Sanket", age: 32 }; // Object
+            let arrayExample = [1, 2, 3, 4, 5]; // Array
+            let undefinedExample; // Undefined
+            let nullExample = null; // Null
+
+            // Display the examples
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = `
+                <p><b>String:</b> "${stringExample}"</p>
+                <p><b>Number:</b> ${numberExample}</p>
+                <p><b>Boolean:</b> ${booleanExample}</p>
+                <p><b>Object:</b> ${JSON.stringify(objectExample)}</p>
+                <p><b>Array:</b> ${arrayExample}</p>
+                <p><b>Undefined:</b> ${undefinedExample}</p>
+                <p><b>Null:</b> ${nullExample}</p>
+            `;
+        }
+    </script>
+</body>
+
+</html>
