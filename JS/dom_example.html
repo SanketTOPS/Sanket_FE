@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript DOM Basics</title>
+</head>
+
+<body>
+    <h1>JavaScript DOM Basics for Beginners</h1>
+    <p id="intro">This is an introduction paragraph.</p>
+    <div class="content">
+        <p class="text">First paragraph inside the div.</p>
+        <p class="text">Second paragraph inside the div.</p>
+    </div>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <script>
+        // Accessing the entire document
+        console.log("Document object:", document);
+
+        // Using document.getElementById
+        const introElement = document.getElementById("intro");
+        console.log("Element with id 'intro':", introElement);
+
+        // Using document.getElementsByClassName
+        const textElements = document.getElementsByClassName("text");
+        console.log("Elements with class 'text':", textElements);
+
+        // Using document.getElementsByTagName
+        const listItems = document.getElementsByTagName("li");
+        console.log("List items:", listItems);
+
+        // Using document.querySelector
+        const firstParagraph = document.querySelector(".text");
+        console.log("First element with class 'text':", firstParagraph);
+
+        // Using document.querySelectorAll
+        const allParagraphs = document.querySelectorAll("p");
+        console.log("All paragraphs:", allParagraphs);
+
+        // Accessing document.body
+        console.log("Document body:", document.body);
+
+        // Accessing and modifying innerHTML
+        console.log("Intro paragraph content before:", introElement.innerHTML);
+        introElement.innerHTML = "Updated introduction paragraph.";
+        console.log("Intro paragraph content after:", introElement.innerHTML);
+
+        // Accessing and modifying textContent
+        const firstListItem = document.querySelector("li");
+        console.log("First list item text content before:", firstListItem.textContent);
+        firstListItem.textContent = "Updated Item 1";
+        console.log("First list item text content after:", firstListItem.textContent);
+
+        // Using document.createElement
+        const newParagraph = document.createElement("p");
+        newParagraph.textContent = "This is a new paragraph created dynamically.";
+        document.body.appendChild(newParagraph);
+        console.log("New paragraph added to body:", newParagraph);
+
+        // Using document.removeChild
+        const ulElement = document.querySelector("ul");
+        const lastListItem = ulElement.lastElementChild;
+        ulElement.removeChild(lastListItem);
+        console.log("Last list item removed:", lastListItem);
+
+        // Using document.replaceChild
+        const replacementParagraph = document.createElement("p");
+        replacementParagraph.textContent = "This paragraph replaced an existing one.";
+        const oldParagraph = document.querySelector(".content .text");
+        document.querySelector(".content").replaceChild(replacementParagraph, oldParagraph);
+        console.log("Old paragraph replaced:", oldParagraph);
+    </script>
+</body>
+
+</html>

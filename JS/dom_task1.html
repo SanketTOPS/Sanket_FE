@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Text</title>
+</head>
+
+<body>
+    <p id="text">Original Text</p>
+    <button id="changeTextButton" onclick="changeText()">Change Text</button>
+
+    <script>
+        const button = document.getElementById("changeTextButton");
+        const paragraph = document.getElementById("text");
+
+        // button.addEventListener("click", () => {
+        //     paragraph.textContent = "Text has been changed!";
+        // });
+        function changeText() {
+            paragraph.textContent = "Text has been changed!";
+        }
+    </script>
+</body>
+
+</html>

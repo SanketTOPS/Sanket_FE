@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks for Beginners</title>
+</head>
+
+<body>
+    <h1>JavaScript Tasks for Beginners</h1>
+
+    <h2>1. Print "Hello, World!"</h2>
+    <pre>
+<code>
+console.log("Hello, World!");
+</code>
+    </pre>
+
+    <h2>2. Sum of Two Numbers</h2>
+    <pre>
+<code>
+let num1 = 5;
+let num2 = 10;
+let sum = num1 + num2;
+console.log("Sum:", sum);
+</code>
+    </pre>
+
+    <h2>3. Check Even or Odd</h2>
+    <pre>
+<code>
+let number = 7;
+if (number % 2 === 0) {
+    console.log("Even");
+} else {
+    console.log("Odd");
+}
+</code>
+    </pre>
+
+    <h2>4. Reverse a String</h2>
+    <pre>
+<code>
+let str = "JavaScript";
+let reversed = str.split("").reverse().join("");
+console.log("Reversed:", reversed);
+</code>
+    </pre>
+
+    <h2>5. Generate Random Numbers</h2>
+    <pre>
+<code>
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+console.log("Random Number:", randomNumber);
+</code>
+    </pre>
+
+    <h2>6. Fibonacci Series</h2>
+    <pre>
+<code>
+let n1 = 0, n2 = 1, nextTerm;
+console.log(n1); // First term
+console.log(n2); // Second term
+
+for (let i = 3; i <= 10; i++) {
+    nextTerm = n1 + n2;
+    console.log(nextTerm);
+    n1 = n2;
+    n2 = nextTerm;
+}
+</code>
+    </pre>
+
+    <h2>7. Factorial of a Number</h2>
+    <pre>
+<code>
+let number = 5;
+let factorial = 1;
+
+for (let i = 1; i <= number; i++) {
+    factorial *= i;
+}
+console.log("Factorial:", factorial);
+</code>
+    </pre>
+
+    <h2>8. Find the Largest Number</h2>
+    <pre>
+<code>
+let numbers = [10, 5, 8, 20, 15];
+let largest = Math.max(...numbers);
+console.log("Largest Number:", largest);
+</code>
+    </pre>
+
+    <h2>9. Palindrome Checker</h2>
+    <pre>
+<code>
+let str = "radar";
+let isPalindrome = str === str.split("").reverse().join("");
+console.log("Is Palindrome:", isPalindrome);
+</code>
+    </pre>
+
+    <h2>10. Count Vowels in a String</h2>
+    <pre>
+<code>
+let str = "Hello World";
+let vowels = str.match(/[aeiou]/gi);
+console.log("Number of Vowels:", vowels ? vowels.length : 0);
+</code>
+    </pre>
+
+    <h2>11. Sort an Array</h2>
+    <pre>
+<code>
+let numbers = [10, 5, 8, 20, 15];
+let sortedNumbers = numbers.sort((a, b) => a - b);
+console.log("Sorted Array:", sortedNumbers);
+</code>
+    </pre>
+
+    <h2>12. Convert Celsius to Fahrenheit</h2>
+    <pre>
+<code>
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}
+console.log("Fahrenheit:", celsiusToFahrenheit(25));
+</code>
+    </pre>
+
+    <h2>13. Remove Duplicates from an Array</h2>
+    <pre>
+<code>
+let numbers = [1, 2, 2, 3, 4, 4, 5];
+let uniqueNumbers = [...new Set(numbers)];
+console.log("Unique Array:", uniqueNumbers);
+</code>
+    </pre>
+
+    <h2>14. Calculate the Sum of an Array</h2>
+    <pre>
+<code>
+let numbers = [10, 20, 30, 40];
+let sum = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log("Sum:", sum);
+</code>
+    </pre>
+
+    <h2>15. FizzBuzz</h2>
+    <pre>
+<code>
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
+</code>
+    </pre>
+</body>
+
+</html>

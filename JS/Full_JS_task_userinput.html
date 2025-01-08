@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .task {
+            margin-bottom: 30px;
+        }
+        .output {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            font-family: monospace;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive JavaScript Tasks for Beginners</h1>
+
+    <div class="task">
+        <h2>1. Print "Hello, World!"</h2>
+        <button onclick="task1()">Run</button>
+        <div class="output" id="output1"></div>
+    </div>
+
+    <div class="task">
+        <h2>2. Sum of Two Numbers</h2>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button onclick="task2()">Run</button>
+        <div class="output" id="output2"></div>
+    </div>
+
+    <div class="task">
+        <h2>3. Check Even or Odd</h2>
+        <input type="number" id="evenOddInput" placeholder="Enter a number">
+        <button onclick="task3()">Run</button>
+        <div class="output" id="output3"></div>
+    </div>
+
+    <div class="task">
+        <h2>4. Reverse a String</h2>
+        <input type="text" id="reverseStringInput" placeholder="Enter a string">
+        <button onclick="task4()">Run</button>
+        <div class="output" id="output4"></div>
+    </div>
+
+    <div class="task">
+        <h2>5. Generate Random Numbers</h2>
+        <button onclick="task5()">Run</button>
+        <div class="output" id="output5"></div>
+    </div>
+
+    <div class="task">
+        <h2>6. Fibonacci Series</h2>
+        <input type="number" id="fibonacciInput" placeholder="Enter number of terms">
+        <button onclick="task6()">Run</button>
+        <div class="output" id="output6"></div>
+    </div>
+
+    <div class="task">
+        <h2>7. Factorial of a Number</h2>
+        <input type="number" id="factorialInput" placeholder="Enter a number">
+        <button onclick="task7()">Run</button>
+        <div class="output" id="output7"></div>
+    </div>
+
+    <div class="task">
+        <h2>8. Find the Largest Number</h2>
+        <input type="text" id="largestNumberInput" placeholder="Enter numbers separated by commas">
+        <button onclick="task8()">Run</button>
+        <div class="output" id="output8"></div>
+    </div>
+
+    <div class="task">
+        <h2>9. Palindrome Checker</h2>
+        <input type="text" id="palindromeInput" placeholder="Enter a string">
+        <button onclick="task9()">Run</button>
+        <div class="output" id="output9"></div>
+    </div>
+
+    <div class="task">
+        <h2>10. Count Vowels in a String</h2>
+        <input type="text" id="vowelCountInput" placeholder="Enter a string">
+        <button onclick="task10()">Run</button>
+        <div class="output" id="output10"></div>
+    </div>
+
+    <div class="task">
+        <h2>11. Sort an Array</h2>
+        <input type="text" id="sortArrayInput" placeholder="Enter numbers separated by commas">
+        <button onclick="task11()">Run</button>
+        <div class="output" id="output11"></div>
+    </div>
+
+    <div class="task">
+        <h2>12. Convert Celsius to Fahrenheit</h2>
+        <input type="number" id="celsiusInput" placeholder="Enter temperature in Celsius">
+        <button onclick="task12()">Run</button>
+        <div class="output" id="output12"></div>
+    </div>
+
+    <div class="task">
+        <h2>13. Remove Duplicates from an Array</h2>
+        <input type="text" id="removeDuplicatesInput" placeholder="Enter numbers separated by commas">
+        <button onclick="task13()">Run</button>
+        <div class="output" id="output13"></div>
+    </div>
+
+    <div class="task">
+        <h2>14. Calculate the Sum of an Array</h2>
+        <input type="text" id="sumArrayInput" placeholder="Enter numbers separated by commas">
+        <button onclick="task14()">Run</button>
+        <div class="output" id="output14"></div>
+    </div>
+
+    <div class="task">
+        <h2>15. FizzBuzz</h2>
+        <input type="number" id="fizzBuzzInput" placeholder="Enter a number">
+        <button onclick="task15()">Run</button>
+        <div class="output" id="output15"></div>
+    </div>
+
+    <script>
+        function task1() {
+            document.getElementById('output1').innerText = "Hello, World!";
+        }
+
+        function task2() {
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let sum = num1 + num2;
+            document.getElementById('output2').innerText = "Sum: " + sum;
+        }
+
+        function task3() {
+            let number = parseInt(document.getElementById('evenOddInput').value);
+            let result = number % 2 === 0 ? "Even" : "Odd";
+            document.getElementById('output3').innerText = result;
+        }
+
+        function task4() {
+            let str = document.getElementById('reverseStringInput').value;
+            let reversed = str.split("").reverse().join("");
+            document.getElementById('output4').innerText = "Reversed: " + reversed;
+        }
+
+        function task5() {
+            let randomNumber = Math.floor(Math.random() * 100) + 1;
+            document.getElementById('output5').innerText = "Random Number: " + randomNumber;
+        }
+
+        function task6() {
+            let terms = parseInt(document.getElementById('fibonacciInput').value);
+            let n1 = 0, n2 = 1, nextTerm;
+            let output = [n1, n2];
+            for (let i = 3; i <= terms; i++) {
+                nextTerm = n1 + n2;
+                output.push(nextTerm);
+                n1 = n2;
+                n2 = nextTerm;
+            }
+            document.getElementById('output6').innerText = "Fibonacci Series: " + output.join(", ");
+        }
+
+        function task7() {
+            let number = parseInt(document.getElementById('factorialInput').value);
+            let factorial = 1;
+            for (let i = 1; i <= number; i++) {
+                factorial *= i;
+            }
+            document.getElementById('output7').innerText = "Factorial: " + factorial;
+        }
+
+        function task8() {
+            let numbers = document.getElementById('largestNumberInput').value.split(",").map(Number);
+            let largest = Math.max(...numbers);
+            document.getElementById('output8').innerText = "Largest Number: " + largest;
+        }
+
+        function task9() {
+            let str = document.getElementById('palindromeInput').value;
+            let isPalindrome = str === str.split("").reverse().join("");
+            document.getElementById('output9').innerText = "Is Palindrome: " + isPalindrome;
+        }
+
+        function task10() {
+            let str = document.getElementById('vowelCountInput').value;
+            let vowels = str.match(/[aeiou]/gi);
+            document.getElementById('output10').innerText = "Number of Vowels: " + (vowels ? vowels.length : 0);
+        }
+
+        function task11() {
+            let numbers = document.getElementById('sortArrayInput').value.split(",").map(Number);
+            let sortedNumbers = numbers.sort((a, b) => a - b);
+            document.getElementById('output11').innerText = "Sorted Array: " + sortedNumbers.join(", ");
+        }
+
+        function task12() {
+            let celsius = parseFloat(document.getElementById('celsiusInput').value);
+            let fahrenheit = (celsius * 9 / 5) + 32;
+            document.getElementById('output12').innerText = "Fahrenheit: " + fahrenheit;
+        }
+
+        function task13() {
+            let numbers = document.getElementById('removeDuplicatesInput').value.split(",").map(Number);
+            let uniqueNumbers = [...new Set(numbers)];
+            document.getElementById('output13').innerText = "Unique Array: " + uniqueNumbers.join(", ");
+        }
+
+        function task14() {
+            let numbers = document.getElementById('sumArrayInput').value.split(",").map(Number);
+            let sum = numbers.reduce((acc, curr) => acc + curr, 0);
+            document.getElementById('output14').innerText = "Sum: " + sum;
+        }
+
+        function task15() {
+            let num = parseInt(document.getElementById('fizzBuzzInput').value);
+            let output = [];
+            for (let i = 1; i <= num; i++) {
+                if (i % 3 === 0 && i % 5 === 0) {
+                    output.push("FizzBuzz");
+                } else if (i % 3 === 0) {
+                    output.push("Fizz");
+                } else if (i % 5 === 0) {
+                    output.push("Buzz");
+                } else {
+                    output.push(i);
+                }
+            }
+            document.getElementById('output15').innerText = output.join(", ");
+        }
+    </script>
+</body>
+</html>

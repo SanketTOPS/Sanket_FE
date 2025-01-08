@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Toggle Visibility</title>
+</head>
+
+<body>
+    <p id="text">This is a toggleable paragraph.</p>
+    <button id="toggleButton">Toggle Visibility</button>
+
+    <script>
+        const button = document.getElementById("toggleButton");
+        const paragraph = document.getElementById("text");
+
+        button.addEventListener("click", () => {
+            if (paragraph.style.display === "none") {
+                paragraph.style.display = "block";
+            }
+            else {
+                paragraph.style.display = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>
