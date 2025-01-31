@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Hello, jQuery!</h1>
+    <button id="change-text">Click me to change text</button>
+
+    <script>
+        // jQuery code will go here
+        $(document).ready(function () {
+            // When the button is clicked
+            $("#change-text").click(function () {
+                $("h1").text("Text Changed!");
+            });
+        });
+    </script>
+</body>
+
+</html>

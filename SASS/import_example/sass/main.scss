@@ -1,0 +1,57 @@
+// main.scss
+@use 'var'; // Import variables
+@use 'mix'; // Import mixins
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+header {
+    background-color: variables.$primary-color;
+    padding: 20px;
+    color: white;
+    text-align: center;
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+.content {
+    margin: 20px;
+}
+
+.primary-btn {
+    background-color: variables.$primary-color;
+    color: white;
+    padding: variables.$button-padding;
+    border: none;
+    cursor: pointer;
+    @include mixins.border-radius(5px);
+
+    &:hover {
+        background-color: darken(variables.$primary-color, 10%);
+    }
+}
+
+.secondary-btn {
+    background-color: variables.$secondary-color;
+    color: white;
+    padding: variables.$button-padding;
+    border: none;
+    cursor: pointer;
+    @include mixins.border-radius(5px);
+
+    &:hover {
+        background-color: darken(variables.$secondary-color, 10%);
+    }
+}
+
+footer {
+    background-color: variables.$secondary-color;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}

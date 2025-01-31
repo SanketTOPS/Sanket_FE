@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass Examples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Sass Examples</h1>
+
+    <!-- Sass Variables Example -->
+    <section>
+        <h2>Sass Variables</h2>
+        <p>Define reusable values for colors, fonts, and other properties.</p>
+        <pre>
+        <code>
+        $primary-color: #3498db;
+        $font-size: 16px;
+        
+        body {
+            color: $primary-color;
+            font-size: $font-size;
+        }
+        </code>
+        </pre>
+    </section>
+
+    <!-- Sass Data Types Example -->
+    <section>
+        <h2>Sass Data Types</h2>
+        <p>Examples of strings, numbers, colors, booleans, lists, and nulls.</p>
+        <pre>
+        <code>
+        $string: "Hello World";
+        $number: 20px;
+        $color: #ff5733;
+        $boolean: true;
+        $list: 1px solid red, 2px dashed blue;
+        $null-value: null;
+        </code>
+        </pre>
+    </section>
+
+    <!-- Sass Nested Rules Example -->
+    <section>
+        <h2>Sass Nested Rules</h2>
+        <p>Allows nesting CSS selectors for better readability.</p>
+        <pre>
+        <code>
+        .container {
+            width: 100%;
+            .box {
+                background: #eee;
+                p {
+                    color: #333;
+                }
+            }
+        }
+        </code>
+        </pre>
+    </section>
+
+    <!-- Sass Importing Files Example -->
+    <section>
+        <h2>Sass Importing Files</h2>
+        <p>Use <code>@import</code> to split styles into multiple files.</p>
+        <pre>
+        <code>
+        @import "variables";
+        @import "buttons";
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        </code>
+        </pre>
+    </section>
+
+    <!-- Sass Mixins Example -->
+    <section>
+        <h2>Sass Mixins</h2>
+        <p>Reusable code blocks that can accept arguments.</p>
+        <pre>
+        <code>
+        @mixin button-style($color) {
+            background: $color;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        
+        .btn-primary {
+            @include button-style(#3498db);
+        }
+        </code>
+        </pre>
+    </section>
+
+    <!-- Sass @extend Directive Example -->
+    <section>
+        <h2>Sass @extend Directive</h2>
+        <p>Extends styles from one selector to another.</p>
+        <pre>
+        <code>
+        .button {
+            padding: 10px 15px;
+            background: #ff5733;
+        }
+        
+        .btn-danger {
+            @extend .button;
+            color: white;
+        }
+        </code>
+        </pre>
+    </section>
+</body>
+
+</html>

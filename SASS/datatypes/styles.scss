@@ -1,0 +1,77 @@
+// 1. Strings
+$font-family: "Arial, sans-serif";
+$site-name: 'My Awesome Site';
+
+// 2. Numbers
+$base-size: 16px;
+$large-size: $base-size * 2; // 32px
+$padding: 20px;
+$width: 80%;
+
+// 3. Colors
+$primary-color: #3498db;
+$secondary-color: rgb(46, 204, 113);
+$background-color: rgba(0, 0, 0, 0.1);
+
+// 4. Booleans
+$show-header: true;
+
+// 5. Lists
+$button-colors: red, blue, green;
+
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+// Header style (Conditionally displayed)
+header {
+    @if $show-header {
+        display: block;
+        background-color: $primary-color;
+        padding: $padding;
+        color: white;
+        text-align: center;
+    }
+
+    @else {
+        display: none;
+    }
+}
+
+// Button styles (Accessing list values)
+button {
+    padding: 10px 20px;
+    font-size: $base-size;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: nth($button-colors, 1); // red
+    color: white;
+}
+
+.secondary-btn {
+    background-color: nth($button-colors, 2); // blue
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: lighten(nth($button-colors, 1), 10%); // Lighten red
+}
+
+.secondary-btn:hover {
+    background-color: lighten(nth($button-colors, 2), 10%); // Lighten blue
+}
+
+// Footer
+footer {
+    background-color: $secondary-color;
+    padding: $padding;
+    text-align: center;
+    color: white;
+}

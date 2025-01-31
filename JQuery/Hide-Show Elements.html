@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show Elements</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <button id="hide">Hide Paragraph</button>
+    <button id="show">Show Paragraph</button>
+    <p id="my-paragraph">This is a paragraph.</p>
+
+    <script>
+        $("#hide").click(function () {
+            $("#my-paragraph").hide();
+        });
+
+        $("#show").click(function () {
+            $("#my-paragraph").show();
+        });
+    </script>
+
+</body>
+
+</html>

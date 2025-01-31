@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Fade</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <button id="fadeIn-btn">Fade In</button>
+    <button id="fadeOut-btn">Fade Out</button>
+    <p id="fade-text" style="display:none;">This is a paragraph that will fade in or out.</p>
+
+    <script>
+        $("#fadeIn-btn").click(function () {
+            $("#fade-text").fadeIn();
+        });
+
+        $("#fadeOut-btn").click(function () {
+            $("#fade-text").fadeOut();
+        });
+    </script>
+
+</body>
+
+</html>

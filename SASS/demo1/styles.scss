@@ -1,0 +1,21 @@
+// Variable for primary color
+$primary-color: #3498db;
+
+// Nesting
+nav {
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+// Using a variable
+button {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
